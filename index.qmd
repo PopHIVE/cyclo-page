@@ -283,7 +283,7 @@ case tracking. This dashboard tracks reported cases, combining CDC's NNDSS data
 with additional data at the county level from three states: Florida,
 Michigan, and Ohio. Data reflected below are current as of `r as_of`.
 
-**Note**: State data is the authoritative source for case reporting; NNDSS data may lag or differ due to submission timing variations.
+**Note**: State data are the authoritative source for case reporting; NNDSS data may lag or differ due to submission timing variations.
 
 ## Trends over time
 National total shown by default; use the dropdown to switch to a specific state.
