@@ -142,9 +142,11 @@ pophive_magma_colorscale <- local({
 cyclo_dir <- file.path(CACHE_DIR, "cyclo_scraper")
 if (!dir.exists(cyclo_dir)) {
   system2("git", c("clone", "--depth", "1",
-                    "https://github.com/PopHIVE/cyclo_scraper.git", shQuote(cyclo_dir)))
+                    "https://github.com/PopHIVE/cyclo_scraper.git", shQuote(cyclo_dir)),
+          stdout = FALSE, stderr = FALSE)
 } else {
-  system2("git", c("-C", shQuote(cyclo_dir), "pull", "--ff-only"))
+  system2("git", c("-C", shQuote(cyclo_dir), "pull", "--ff-only"),
+          stdout = FALSE, stderr = FALSE)
 }
 
 download_if_missing <- function(url, dest) {
